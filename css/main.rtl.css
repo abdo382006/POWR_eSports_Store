@@ -1,0 +1,274 @@
+/* Start Components */
+html[dir="rtl"] .select-wrapper h4 {
+  width: 60px;
+}
+
+html[dir="rtl"] .select-wrapper .select .icon {
+  right: initial;
+  left: 7px;
+}
+
+html[dir="rtl"] .main-title::after {
+  left: initial;
+  right: 0;
+}
+
+html[dir="rtl"] .contact-info a:hover {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+html[dir="rtl"] .field .input:has(select)::after, 
+html[dir="rtl"] .field .input .icon {
+  right: initial;
+  left: 10px;
+}
+
+html[dir="rtl"] .field :where(input, select) {
+  direction: rtl;
+}
+
+html[dir="rtl"] .field .input:has(.country-select) input {
+  padding-left: 0;
+  padding-right: 85px;
+}
+
+html[dir="rtl"] .field .input .country-select {
+  border-right: none;
+  border-left: var(--light-border);
+  left: initial;
+  right: 0;
+}
+
+html[dir="rtl"] .field:where(.success, .error) .input .country-select {
+  border-left-color: var(--status-color);
+}
+
+html[dir="rtl"] .field .input .country-select::after {
+  right: initial;
+  left: 10px;
+}
+
+html[dir="rtl"] .field .input .country-select span {
+  margin-left: 10px;
+}
+
+html[dir="rtl"] .testimonial-box img {
+  left: initial;
+  right: 20px;
+}
+/* End Components */
+/* Start Animations */
+@keyframes infiniteScrollRTL {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes boundingRTL {
+  0%,
+  100% {
+    transform: rotate(180deg) translateX(0);
+  }
+  50% {
+    transform: rotate(180deg) translateX(5px);
+  }
+}
+/* End Animations */
+/* Start Infinite Text Bar */
+html[dir="rtl"] .infinite-text-bar .close-btn {
+  right: initial;
+  left: 15px;
+}
+
+html[dir="rtl"] .infinite-text-bar h3 {
+  animation: infiniteScrollRTL 3s linear infinite;
+}
+/* End Infinite Text Bar */
+/* Start Top Bar Section */
+html[dir="rtl"] .top-bar .text p {
+  padding-right: 0;
+  border-right: none;
+  margin-right: 0;
+
+  padding-left: 15px;
+  border-left: 1px solid var(--dark-gray-color);
+  margin-left: 15px;
+}
+/* End Top Bar Section */
+/* Start Header */
+html[dir="rtl"] header nav {
+  margin-left: 0;
+  margin-right: 100px;
+}
+
+html[dir="rtl"] header .icons button.cart-btn::before {
+  left: initial;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+/* Small Screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  html[dir="rtl"] header nav {
+    margin-right: 50px;
+  }
+}
+/* End Header */
+/* Start Mobile Menu */
+html[dir="rtl"] .mobile-menu {
+  left: initial;
+  right: 0;
+  transform: translateX(100%);
+}
+
+html[dir="rtl"] .mobile-menu.open {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .mobile-menu .main-title {
+  margin-right: 0;
+  margin-left: auto;
+}
+/* End Mobile Menu */
+/* Start Search Bar */
+html[dir="rtl"] .search-bar .icon {
+  left: initial;
+  right: 10px;
+}
+
+html[dir="rtl"] .search-bar button {
+  right: initial;
+  left: 15px;
+}
+
+html[dir="rtl"] .search-bar input {
+  padding: 18px 32px 18px 18px;
+}
+
+html[dir="rtl"] .search-bar input:focus {
+  padding: 18px;
+}
+/* End Search Bar */
+/* Start Login Form */
+html[dir="rtl"] .login-popup .close-btn {
+  right: initial;
+  left: 15px;
+}
+/* End Login Form */
+/* Start Cart Menu */
+html[dir="rtl"] .cart-menu {
+  right: initial;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+html[dir="rtl"] .cart-menu.open {
+  transform: translate(0);
+}
+
+html[dir="rtl"] .cart-menu .products-wrapper .cart-product.removed {
+  transform: translateX(-60px);
+}
+/* End Cart Menu */
+/* Start Cart Status Popup */
+html[dir="rtl"] .cart-status-popup {
+  right: initial;
+  left: 30px;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  html[dir="rtl"] .cart-status-popup {
+    left: 15px;
+  }
+}
+/* End Cart Status Popup */
+/* Start Hero Section */
+html[dir="rtl"] .hero .prev-btn {
+  left: initial;
+  right: 15px;
+}
+
+html[dir="rtl"] .hero .next-btn {
+  right: initial;
+  left: 15px;
+}
+
+html[dir="rtl"] .hero :where(.prev-btn, .next-btn) .icon {
+  transform: rotate(180deg);
+}
+/* End Hero Section */
+/* Start Testimonials Section */
+html[dir="rtl"] .testimonials .arrow button {
+  transform: rotate(180deg);
+}
+/* End Testimonials Section */
+/* Start Video Section */
+html[dir="rtl"] .video .text {
+  padding-right: 0;
+  padding-left: 40px;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  html[dir="rtl"] .video .text {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+}
+/* End Video Section */
+/* Start Footer */
+html[dir="rtl"] footer .footer-top .links a::before {
+  margin-right: 0;
+  margin-left: 10px;
+  transform: rotate(180deg);
+}
+
+html[dir="rtl"] footer .footer-top .links a:hover::before {
+  animation: boundingRTL 0.5s linear infinite;
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  html[dir="rtl"] footer .footer-top .logo {
+    margin: 0;
+    margin-left: auto;
+  }
+  html[dir="rtl"] footer .footer-top .logo + p {
+    text-align: right;
+  }
+}
+/* End Footer */
+/* Start Website Theme Toggle */
+html[dir="rtl"] .theme-toggle {
+  right: initial;
+  left: 30px;
+  transform: translateX(-100%);
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  html[dir="rtl"] .theme-toggle {
+    left: 15px;
+  }
+}
+/* End Website Theme Toggle */
+/* Start Scroll To Top Btn */
+html[dir="rtl"] .scroll-to-top-btn {
+  right: initial;
+  left: 30px;
+  transform: translateX(calc(-100% - 30px));
+}
+
+html[dir="rtl"] .scroll-to-top-btn.show {
+  transform: translateX(0);
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+  html[dir="rtl"] .scroll-to-top-btn {
+    left: 15px;
+  }
+}
+/* End Scroll To Top Btn */

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is a fully functional e commerce website that was the reason for me to join POWR eSports company as a Front-end Developer for their real website. The website have multi-pages, support multible currencies & multible languages." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="AK Arafat" />
+    <meta name="theme-color" content="#ce181e" />
+    <!-- Website Favicon -->
+    <link rel="icon" href="./favicon.ico" />
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Flag Icons Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Material Icons Library -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Swiper Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS Components File -->
+    <link rel="stylesheet" href="css/components.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Main CSS RTL File -->
+    <link rel="stylesheet" href="css/main.rtl.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" />
+    <title></title>
+  </head>
+  <body>
+    <!-- Start Page Loader -->
+    <div class="page-loader">
+      <img src="images/logo.jpg" alt="POWR eSports Store - متجر باور" />
+      <span class="loader"></span>
+    </div>
+    <!-- End Page Loader -->
+    <!-- Start Top Bar Section -->
+    <section class="top-bar">
+      <div class="container">
+        <div class="text">
+          <p data-content="introText"></p>
+          <a href="https://wa.me/966555427712" target="_blank" title="Help">
+            <i class="fab fa-whatsapp icon"></i> +966555427712
+          </a>
+        </div>
+
+        <div class="settings">
+          <div class="select-wrapper">
+            <h4 data-content="language"></h4>
+            <div class="select">
+              <select name="language" class="language-select-box">
+                <option value="ar" selected>AR</option>
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+              <i class="fas fa-angle-down icon"></i>
+            </div>
+          </div>
+
+          <div class="select-wrapper">
+            <h4 data-content="currency"></h4>
+            <div class="select">
+              <select name="currency" class="currency-select-box">
+                <option value="aed">AED</option>
+                <option value="aud">AUD</option>
+                <option value="bhd">BHD</option>
+                <option value="egp">EGP</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="iqr">IQR</option>
+                <option value="jor">JOR</option>
+                <option value="kwd">KWD</option>
+                <option value="omr">OMR</option>
+                <option value="qar">QAR</option>
+                <option value="sar" selected>SAR</option>
+                <option value="try">TRY</option>
+                <option value="usd">USD</option>
+              </select>
+              <i class="fas fa-angle-down icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Top Bar Section -->
+    <!-- Start Header -->
+    <header>
+      <div class="container">
+        <div class="logo-wrapper">
+          <button class="open-menu-btn" id="openMobileMenuBtn" title="Open Menu"><span
+              class="material-symbols-outlined">menu</span></button>
+          <a href="index.html" title="Home Page"><img src="images/logo.jpg" alt="POWR eSports Store - متجر باور" /></a>
+        </div>
+    
+        <nav>
+          <a href="index.html" data-content="home"></a>
+          <a href="#" id="megaMenuToggle"><span data-content="categories"></span> <i class="fas fa-angle-down icon"></i></a>
+          <a href="faqs.html" data-content="faqs"></a>
+          <a href="contact.html" data-content="contactUs"></a>
+        </nav>
+    
+        <!-- Start Mega Menu -->
+        <div class="mega-menu">
+          <figure class="image">
+            <img src="images/shopping.jpg" alt="Shopping Image" />
+          </figure>
+    
+          <div class="links">
+            <a href="products-list.html" data-categoryName="jersey"><img src="images/categories-icons/jersey.jpg"
+                alt="Official Jerseys" /> <span data-content="officialJersey"></span></a>
+            <a href="products-list.html" data-categoryName="hoodie"><img src="images/categories-icons/hoodie.jpg"
+                alt="Hoodies" /> <span data-content="hoodies"></span></a>
+            <a href="products-list.html" data-categoryName="perfume"><img src="images/categories-icons/perfume.jpg"
+                alt="Perfumes" /> <span data-content="perfumes"></span></a>
+            <a href="products-list.html" data-categoryName="t-shirt"><img src="images/categories-icons/tshirt.jpg"
+                alt="T-shirts" /> <span data-content="tShirts"></span></a>
+            <a href="products-list.html" data-categoryName="bottom piece"><img src="images/categories-icons/pants.jpg"
+                alt="Pants" /> <span data-content="bottomPieces"></span></a>
+          </div>
+    
+          <div class="links">
+            <a href="products-list.html" data-categoryName="swimming set"><img src="images/categories-icons/swimming.jpg"
+                alt="Swimming Set" /> <span data-content="swimmingSet"></span></a>
+            <a href="products-list.html" data-categoryName="accessories"><img src="images/categories-icons/accessorie.jpg"
+                alt="Accessories" /> <span data-content="accessories"></span></a>
+            <a href="products-list.html" data-categoryName="sticker"><img src="images/categories-icons/sticker.jpg"
+                alt="Stickers" /> <span data-content="stickers"></span></a>
+            <a href="products-list.html" data-categoryName="brooch"><img src="images/categories-icons/brooch.jpg"
+                alt="Brooches" /> <span data-content="brooches"></span></a>
+            <a href="products-list.html" data-categoryName="gift voucher"><img src="images/categories-icons/gift.jpg"
+                alt="Gift Vouchers" /> <span data-content="giftVouchers"></span></a>
+          </div>
+        </div>
+        <!-- End Mega Menu -->
+    
+        <div class="icons">
+          <button id="searchBtn" title="Search..."><i class="fas fa-magnifying-glass icon"></i></button>
+          <button id="loginBtn" title="Login"><i class="far fa-user-circle icon"></i></button>
+          <button class="cart-btn" id="cartMenuBtn" title="Open Cart Menu" data-products-count="0">
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+            <p class="price">
+              <span data-currency></span>
+              <span data-price>0.00</span>
+            </p>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Mobile Menu -->
+    <aside class="mobile-menu">
+      <div class="header">
+        <h3 data-content="mainMenu"></h3>
+        <button class="close-btn" title="Close Menu"><span class="material-symbols-outlined">cancel</span></button>
+      </div>
+    
+      <div class="block">
+        <h3 class="main-title" data-content="importantLinks"></h3>
+        <div class="links">
+          <a href="index.html" data-content="home"></a>
+          <a href="#" class="categories-list-toggle"><span data-content="categories"></span> <i
+              class="fas fa-angle-down icon"></i></a>
+          <div class="categories-list">
+            <a href="products-list.html" data-categoryName="jersey"><img src="images/categories-icons/jersey.jpg"
+                alt="Official Jerseys" /> <span data-content="officialJersey"></span></a>
+            <a href="products-list.html" data-categoryName="hoodie"><img src="images/categories-icons/hoodie.jpg"
+                alt="Hoodies" /> <span data-content="hoodies"></span></a>
+            <a href="products-list.html" data-categoryName="perfume"><img src="images/categories-icons/perfume.jpg"
+                alt="Perfumes" /> <span data-content="perfumes"></span></a>
+            <a href="products-list.html" data-categoryName="t-shirt"><img src="images/categories-icons/tshirt.jpg"
+                alt="T-shirts" /> <span data-content="tShirts"></span></a>
+            <a href="products-list.html" data-categoryName="bottom piece"><img src="images/categories-icons/pants.jpg"
+                alt="Pants" /> <span data-content="bottomPieces"></span></a>
+            <a href="products-list.html" data-categoryName="swimming set"><img src="images/categories-icons/swimming.jpg"
+                alt="Swimming Set" /> <span data-content="swimmingSet"></span></a>
+            <a href="products-list.html" data-categoryName="accessories"><img src="images/categories-icons/accessorie.jpg"
+                alt="Accessories" /> <span data-content="accessories"></span></a>
+            <a href="products-list.html" data-categoryName="sticker"><img src="images/categories-icons/sticker.jpg"
+                alt="Stickers" /> <span data-content="stickers"></span></a>
+            <a href="products-list.html" data-categoryName="brooch"><img src="images/categories-icons/brooch.jpg"
+                alt="Brooches" /> <span data-content="brooches"></span></a>
+            <a href="products-list.html" data-categoryName="gift voucher"><img src="images/categories-icons/gift.jpg"
+                alt="Gift Vouchers" /> <span data-content="giftVouchers"></span></a>
+          </div>
+          <a href="faqs.html" data-content="faqs"></a>
+          <a href="contact.html" data-content="contactUs"></a>
+        </div>
+      </div>
+    
+      <div class="block">
+        <h3 class="main-title" data-content="websiteSettings"></h3>
+        <div class="select-wrapper">
+          <h4 data-content="language"></h4>
+          <div class="select">
+            <select name="language" class="language-select-box">
+              <option value="ar" selected>AR</option>
+              <option value="en">EN</option>
+              <option value="fr">FR</option>
+            </select>
+            <i class="fas fa-angle-down icon"></i>
+          </div>
+        </div>
+        <div class="select-wrapper">
+          <h4 data-content="currency"></h4>
+          <div class="select">
+            <select name="currency" class="currency-select-box">
+              <option value="aed">AED</option>
+              <option value="aud">AUD</option>
+              <option value="bhd">BHD</option>
+              <option value="egp">EGP</option>
+              <option value="eur">EUR</option>
+              <option value="gbp">GBP</option>
+              <option value="iqd">IQD</option>
+              <option value="jod">JOD</option>
+              <option value="kwd">KWD</option>
+              <option value="omr">OMR</option>
+              <option value="qar">QAR</option>
+              <option value="sar" selected>SAR</option>
+              <option value="try">TRY</option>
+              <option value="usd">USD</option>
+            </select>
+            <i class="fas fa-angle-down icon"></i>
+          </div>
+        </div>
+      </div>
+    
+      <div class="block">
+        <h3 class="main-title" data-content="contactUs"></h3>
+        <ul class="contact-info">
+          <li>
+            <a href="https://wa.me/966555427712" target="_blank" title="Whatsapp Us">
+              <i class="fab fa-whatsapp fa-fw icon"></i> +966555427712
+            </a>
+          </li>
+          <li>
+            <a href="mailto:Jobs@powr.sa" title="Mail Us"><i class="fas fa-envelope fa-fw icon"></i> Jobs@powr.sa</a>
+          </li>
+          <li>
+            <a href="https://t.me/POWRARMY" target="_blank" title="Our Telegram">
+              <i class="fa-solid fa-paper-plane fa-fw icon"></i> POWR ARMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="block">
+        <h3 class="main-title" data-content="followUs"></h3>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.instagram.com/powr__store/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank" title="Instagram">
+              <i class="fab fa-instagram fa-fw icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/powr__store?s=21&t=jyngBuJKt-fYwiKU2T6ivg" target="_blank" title="X">
+              <i class="fab fa-x-twitter fa-fw icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com/add/poweresports" target="_blank" title="Snapchat">
+              <i class="fab fa-snapchat fa-fw icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@powr_store?_t=8dsS49sy9Mf&_r=1" target="_blank" title="Tik Tok">
+              <i class="fab fa-tiktok fa-fw icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/CLAnPOWR" target="_blank" title="Youtube">
+              <i class="fab fa-youtube fa-fw icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- End Mobile Menu -->
+    <!-- Start Search Bar -->
+    <div class="search-bar">
+      <i class="fas fa-magnifying-glass icon"></i>
+      <input type="search" name="q" id="searchInput" />
+      <button class="main-btn" title="Search">
+        <p data-content="search"></p>
+        <p data-content="search"></p>
+      </button>
+    </div>
+    <!-- End Search Bar -->
+    <!-- Start Login Popup -->
+    <div class="login-popup">
+      <button class="close-btn" title="Close Popup"><span class="material-symbols-outlined">cancel</span></button>
+      <figure class="image"><img src="images/signup.jpg" alt="POWR eSports Store" /></figure>
+      <form action="">
+        <img src="images/logo.jpg" alt="POWR eSports Store" />
+        <h3 data-content="login"></h3>
+        <div class="inputs">
+          <div class="field">
+            <div class="input">
+              <input type="text" name="first-name" id="loginFNInput" />
+              <i class="fas fa-check icon"></i>
+            </div>
+            <p class="msg"></p>
+          </div>
+          <div class="field">
+            <div class="input">
+              <input type="text" name="last-name" id="loginLNInput" />
+              <i class="fas fa-check icon"></i>
+            </div>
+            <p class="msg"></p>
+          </div>
+          <div class="field">
+            <div class="input">
+              <input type="date" name="date" id="loginDateInput" />
+            </div>
+            <p class="msg"></p>
+          </div>
+          <div class="field">
+            <div class="input">
+              <select name="gender" id="loginGenderSelectBox">
+                <option value="#"></option>
+                <option value="male"></option>
+                <option value="female"></option>
+              </select>
+            </div>
+            <p class="msg"></p>
+          </div>
+          <div class="field">
+            <div class="input">
+              <input type="text" name="email" id="loginEmailInput" />
+              <i class="fas fa-check icon"></i>
+            </div>
+            <p class="msg"></p>
+          </div>
+          <div class="field">
+            <div class="input">
+              <input type="tel" name="phone" id="loginPhoneInput" />
+              <div class="country-select">
+                <span class="selected-country-wrapper">+39</span>
+              </div>
+              <ul class="countries-list"></ul>
+              <i class="fas fa-check icon"></i>
+            </div>
+            <p class="msg"></p>
+          </div>
+        </div>
+        <button class="main-btn">
+          <p data-content="login"></p>
+          <p data-content="login"></p>
+        </button>
+      </form>
+    </div>
+    <!-- End Login Popup -->
+    <!-- Start Cart Menu -->
+    <aside class="cart-menu">
+      <div class="header">
+        <h3 data-content="cartMenu"></h3>
+        <button class="close-btn" title="Close Cart"><span class="material-symbols-outlined">cancel</span></button>
+      </div>
+      <div class="empty-cart">
+        <i class="fas fa-shop-slash icon"></i>
+        <h4 data-content="emptyCartMenu"></h4>
+        <p data-content="emptyCartMenuText"></p>
+      </div>
+      <div class="products-wrapper"></div>
+      <div class="footer">
+        <div class="row">
+          <h4 data-content="subtotalPrice"></h4>
+          <div class="price">
+            <span data-currency></span>
+            <span data-price>0.00</span>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="#" class="main-btn">
+            <p data-content="proceedToCheckout"></p>
+            <p data-content="proceedToCheckout"></p>
+          </a>
+        </div>
+      </div>
+    </aside>
+    <!-- End Cart Menu -->
+    <!-- Start Product View Section -->
+    <section class="product-view">
+      <div class="container">
+        <div class="images swiper">
+          <figure class="main-image"><img src="" alt="" /></figure>
+          <div class="small-images swiper-wrapper"></div>
+        </div>
+
+        <div class="text">
+          <h2 class="product-title"></h2>
+          <div class="info">
+            <span class="code"></span>
+            <span class="rate"></span>
+          </div>
+          <p class="product-description"></p>
+          <div class="price">
+            <span data-currency></span>
+            <span data-price></span>
+          </div>
+          <input type="number" class="quantity-input" min="1" />
+          <button class="main-btn add-to-cart-btn" title="Add To Cart">
+            <p><i class="far fa-shopping-bag fa-fw icon"></i><span data-content="addToCart"></span></p>
+            <p><i class="far fa-shopping-bag fa-fw icon"></i><span data-content="addToCart"></span></p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Product View Section -->
+    <!-- Start Products Section -->
+    <section class="products">
+      <div class="container swiper">
+        <h2 data-content="youMayLike" class="main-title"></h2>
+        <div class="content swiper-wrapper" id="similarProductsWrapper"></div>
+        <div class="swiper-scrollbar products-scrollbar"></div>
+      </div>
+    </section>
+    <!-- End Products Section -->
+    <!-- Start Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="col">
+            <a href="index.html" class="logo" title="Home Page"><img src="images/logo.jpg" alt="POWR eSport Store" /></a>
+            <p data-content="footerText"></p>
+          </div>
+          <div class="col">
+            <h3 data-content="importantLinks"></h3>
+            <div class="links">
+              <a href="products-list.html" data-content="perfumes" data-categoryName="perfume"></a>
+              <a href="products-list.html" data-content="hoodies" data-categoryName="hoodie"></a>
+              <a href="products-list.html" data-content="tShirts" data-categoryName="t-shirt"></a>
+              <a href="faqs.html" data-content="faqs"></a>
+              <a href="contact.html" data-content="contactUs"></a>
+            </div>
+          </div>
+          <div class="col">
+            <h3 data-content="contactUs"></h3>
+            <ul class="contact-info">
+              <li>
+                <a href="https://wa.me/966555427712" target="_blank" title="Whatsapp Us">
+                  <i class="fab fa-whatsapp fa-fw icon"></i> +966555427712
+                </a>
+              </li>
+              <li>
+                <a href="mailto:Jobs@powr.sa" title="Mail Us"><i class="fas fa-envelope fa-fw icon"></i> Jobs@powr.sa</a>
+              </li>
+              <li>
+                <a href="https://t.me/POWRARMY" target="_blank" title="Our Telegram">
+                  <i class="fa-solid fa-paper-plane fa-fw icon"></i> POWR ARMY
+                </a>
+              </li>
+            </ul>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.instagram.com/powr__store/?igshid=MzMyNGUyNmU2YQ%3D%3D" target="_blank"
+                  title="Instagram">
+                  <i class="fab fa-instagram fa-fw icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/powr__store?s=21&amp;t=jyngBuJKt-fYwiKU2T6ivg" target="_blank" title="X">
+                  <i class="fab fa-x-twitter fa-fw icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.snapchat.com/add/poweresports" target="_blank" title="Snapchat">
+                  <i class="fab fa-snapchat fa-fw icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@powr_store?_t=8dsS49sy9Mf&amp;_r=1" target="_blank" title="Tik Tok">
+                  <i class="fab fa-tiktok fa-fw icon"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/user/CLAnPOWR" target="_blank" title="Youtube">
+                  <i class="fab fa-youtube fa-fw icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 data-content="downloadApp"></h3>
+            <div class="download-methods">
+              <a href="https://play.google.com/store/apps/details?id=com.mtn.powr" target="_blank"
+                title="Download Via Google Play">
+                <img src="images/google-play.jpg" alt="Google Play" />
+              </a>
+              <a href="https://www.apple.com/eg-ar/app-store/" target="_blank" title="Download Via App Store">
+                <img src="images/app-store.jpg" alt="App Store" />
+              </a>
+            </div>
+            <span data-content="taxNumber"></span>
+            <p>311339579100003</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        <div class="container">
+          <p>الحقوق محفوظة | <span id="copyrightYearWrapper"></span> POWR eSports</p>
+          <div class="payment-methods">
+            <img src="images/payment-gateways/mada.jpg" alt="Mada" title="Mada" />
+            <img src="images/payment-gateways/master-card.jpg" alt="Master Card" title="Master Card" />
+            <img src="images/payment-gateways/visa.jpg" alt="Visa" title="Visa" />
+            <img src="images/payment-gateways/stc-pay.jpg" alt="STC Pay" title="STC Pay" />
+            <img src="images/payment-gateways/apple-pay.jpg" alt="Apple Pay" title="Apple Pay" />
+            <img src="images/payment-gateways/tamara.jpg" alt="Tamara" title="Tamara" />
+            <img src="images/payment-gateways/cash.jpg" alt="Cash" title="Cash" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Website Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle">
+      <span class="material-symbols-outlined icon light active">
+        light_mode
+      </span>
+      <span></span>
+      <span class="material-symbols-outlined icon dark">
+        dark_mode
+      </span>
+    </button>
+    <!-- End Website Theme Toggle -->
+    <!-- Start Scroll To Top Btn -->
+    <button class="scroll-to-top-btn" id="scrollToTopBtn" title="Scroll To Top">
+      <i class="fas fa-angles-up icon"></i>
+    </button>
+    <!-- End Scroll To Top Btn -->
+
+    <!-- Swiper Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper Library -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS Sliders File -->
+    <script src="js/sliders.js" type="module"></script>
+    <!-- JS Form Validation File -->
+    <script src="js/form-validation.js" type="module"></script>
+    <!-- JS Themes File -->
+    <script src="js/themes.js" type="module"></script>
+    <!-- JS Languages File -->
+    <script src="js/languages.js" type="module"></script>
+    <!-- JS Currencies File -->
+    <script src="js/currencies.js" type="module"></script>
+    <!-- JS Cart File -->
+    <script src="js/cart.js" type="module"></script>
+    <!-- JS Search File -->
+    <script src="js/search.js" type="module"></script>
+    <!-- JS Products List File -->
+    <script src="js/products-list.js" type="module"></script>
+    <!-- JS Product Details File -->
+    <script src="js/product-details.js" type="module"></script>
+    <!-- Main JS File -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
